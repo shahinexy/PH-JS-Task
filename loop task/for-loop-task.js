@@ -80,7 +80,12 @@ console.log('=============');
 Generate a multiplication table for number 9
 
  */
-
+for(let i = 1; i <= 10; i++){
+    tableOf9 = 9;
+    tableOf9 *= i;
+    console.log(`9 X ${i} = ${tableOf9}`);
+}
+console.log('==========================');
 
 /***
 

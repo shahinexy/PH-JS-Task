@@ -87,3 +87,28 @@ for(let i = 0; i < discountArray.length; i++){
     }
 }
 console.log(discount);
+
+console.log('==================');
+
+
+// frequencey array 
+const frequencyArray = [0,0,0,0,0,0,0,0,0,0]
+const number = '1224546542633446029780';
+for(let i = 0; i < number.length; i++){
+    current = number[i];
+    frequencyArray[current]++;
+}
+console.log(frequencyArray);
+console.log('===================');
+
+// find out the miximum occurance
+let maxOccurance = frequencyArray[0]
+let maxOccuranceIndex = 0;
+for(let i =0; i < frequencyArray.length; i++){
+    const currentOccurance = frequencyArray[i];
+    if(currentOccurance > maxOccurance){
+        maxOccurance = currentOccurance;
+        maxOccuranceIndex = i;
+    }
+}
+console.log('maxOccurance:', maxOccurance, 'maxOccuranceIndex:', maxOccuranceIndex);

@@ -112,3 +112,18 @@ for(let i =0; i < frequencyArray.length; i++){
     }
 }
 console.log('maxOccurance:', maxOccurance, 'maxOccuranceIndex:', maxOccuranceIndex);
+
+console.log('=============================');
+
+// serial change an array 
+const serial = [10,90,30,40,50,20,60,70,80];
+let targetNumber = 30;
+for(let i = 0; i < serial.length; i++){
+    current = serial[i]
+    if(current === targetNumber){
+        break;
+    }
+    let removeElement = serial.shift()
+    serial.push(removeElement);
+}
+console.log(serial);

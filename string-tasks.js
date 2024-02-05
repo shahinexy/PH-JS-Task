@@ -31,7 +31,23 @@ console.log('=======================================');
 
 
 // Check whether a string contains all the vowels a, e, i, o, u
-const checkVowels = 'I am learning web development. Now i am learning about string';
+const checkVowels = "I am learning web development. Now i am learning about string";
+const vowels = ['a','e','i','o','u']
+let haveAllVowel = 0;
+for(let vowel of vowels){
+    if(checkVowels.includes(vowel)){
+        haveAllVowel += 1;
+    }
+}
+if(haveAllVowel === 5){
+    console.log('This string contain all the vowel');
+}
+else{
+    console.log('This string did not contain all the vowel');
+}
+
+
+console.log('=============================================');
 
 
 // If a given string has either x, replace x by y. if the given string has X, replace it by Y.

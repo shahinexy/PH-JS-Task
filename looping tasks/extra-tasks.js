@@ -116,10 +116,10 @@ console.log('maxOccurance:', maxOccurance, 'maxOccuranceIndex:', maxOccuranceInd
 console.log('=============================');
 
 // serial change an array 
-const serial = [10,90,30,40,50,20,60,70,80];
+const serial = [10,90,40,50,20,30,60,70,80];
 let targetNumber = 30;
 for(let i = 0; i < serial.length; i++){
-    current = serial[i]
+    current = serial[0]
     if(current === targetNumber){
         break;
     }
@@ -127,3 +127,10 @@ for(let i = 0; i < serial.length; i++){
     serial.push(removeElement);
 }
 console.log(serial);
+console.log('===================');
+
+for (var i = 0; i < 5; i++) {
+    setTimeout(function () {
+     console.log(i);
+  }, 900);
+} 

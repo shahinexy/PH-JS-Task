@@ -52,5 +52,14 @@ console.log('=============================================');
 
 // If a given string has either x, replace x by y. if the given string has X, replace it by Y.
 // Hint: You should be able to check whether x or X exists. After that, search online how to replace a character in a string.
+const checkX = 'You should be able to check whether x or X exists';
+if(checkX.includes('x')){
+    let replace = checkX.replaceAll('x','y')
+    console.log(replace);    
+}
+if(checkX.includes('X')){
+    let replace = checkX.replaceAll('X','Y')
+    console.log(replace);    
+}
 
 // Capitalize Every first Letter of each word in a String

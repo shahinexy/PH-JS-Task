@@ -44,10 +44,14 @@ let studentx = {
   city: "Gaibandha",
   isStudent: true,
 };
-for(let i=0; i<studentx.length;i++){
-    console.log(i);
+let numberOfProperty = 0;
+for(let number in studentx){
+    numberOfProperty += 1;
 }
+console.log(numberOfProperty);
+
 console.log('==================');
+
 // Task-5 (Hard)
 // Loop through an object and print the key-value pairs with their types
 
@@ -57,3 +61,6 @@ let myObject = {
   city: "Example City",
   isStudent: true,
 };
+for(let key in myObject){
+    console.log(`key: ${key} | type : ${typeof(myObject[key])}`);
+}

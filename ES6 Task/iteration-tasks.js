@@ -8,6 +8,7 @@ console.log('=====================');
 const myArr2 = [33, 50, 79, 90, 101, 30];
 const divisible = myArr2.filter(number => number % 10 == 0);
 console.log(divisible);
+console.log('==================');
 
 // (3) You have an array of object:
 // const instructor = [
@@ -15,9 +16,15 @@ console.log(divisible);
 //     {name : 'Akil', age: 26, position: 'Junior'},
 //     {name : 'Shobuj', age: 30, position: 'Senior'},
 // ]
-// you task is to display the instruction names that has the position senior using array filter.
-
-
+// your task is to display the instruction names that has the position senior using array filter.
+const instructor = [
+    {name : 'Nodi', age: 28, position: 'Senior'},
+    {name : 'Akil', age: 26, position: 'Junior'},
+    {name : 'Shobuj', age: 30, position: 'Senior'},
+]
+const senior = instructor.filter(person => person.position === 'Senior');
+console.log(senior);
+console.log('=======================');
 
 // (4)
 // const people = [
@@ -26,3 +33,10 @@ console.log(divisible);
 //     {name: 'Suchorita', age: 22},
 // ];
 // You have 3 object as array element, can you find the total sum from here. use array.reduce() to do this task. sume of age is 57;
+const people = [
+    {name: 'Meena', age: 20},
+    {name: 'Rina', age: 15},
+    {name: 'Suchorita', age: 22},
+];
+const sum = people.reduce((person, boyos) => person + boyos.age ,0)
+console.log(sum);
